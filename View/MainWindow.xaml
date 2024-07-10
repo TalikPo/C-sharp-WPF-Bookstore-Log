@@ -1,0 +1,275 @@
+﻿<Window x:Class="Книгарня.AppUI.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Книгарня.AppUI.View"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="Книгарня" MinHeight="650" MinWidth="1000" Height="720" AllowsTransparency="True" WindowStyle="None" Background="Transparent" Width="1080" WindowStartupLocation="CenterScreen" Icon="Images\4.png" Closing="Window_Closing">
+    <Window.Resources>
+        <Style x:Key="borderForButtons" TargetType="Border">
+            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="CornerRadius" Value="20"></Setter>
+        </Style>
+
+        <Style x:Key="closingButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            <Setter Property="Width" Value="17"></Setter>
+            <Setter Property="Height" Value="17"></Setter>
+            <Setter Property="Foreground" Value="Red"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            <Setter Property="Margin" Value="0,22,22,15"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#FFCDAE8A"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="mainButtons" TargetType="Button">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Margin" Value="7"></Setter>
+            <Setter Property="Background" Value="#FFA3B8CD"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="IsEnabled" Value="False"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" IsEnabled="{TemplateBinding IsEnabled}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="{TemplateBinding IsEnabled}"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Hand"></Setter>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="DarkGray"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="tabButtons" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="BorderThickness" Value="0,0,0,3"></Setter>
+            <Setter Property="Width" Value="133"></Setter>
+            <Setter Property="Height" Value="33"></Setter>
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            <Setter Property="Margin" Value="10,0,0,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,0,3">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#FFCDAE8A"></Setter>
+                    <Setter Property="Cursor" Value="Hand"></Setter>
+                </Trigger>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#FFCDAE8A"></Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="BorderBrush" Value="#FFCDAE8A"></Setter>
+                </Trigger>
+                <Trigger Property="IsMouseCaptured" Value="True">
+                    <Setter Property="BorderBrush" Value="#FFCDAE8A"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="filterTxtbx" TargetType="TextBox">
+            <Setter Property="Margin" Value="7,7,22,7"></Setter>
+            <Setter Property="Height" Value="25"></Setter>
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+        </Style>
+
+        <Style x:Key="exitButton" TargetType="Button">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Margin" Value="7"></Setter>
+            <Setter Property="Background" Value="#FFA3B8CD"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="IsEnabled" Value="True"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" IsEnabled="{TemplateBinding IsEnabled}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="{TemplateBinding IsEnabled}"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Hand"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="normalText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="17"></Setter>
+            <Setter Property="LineHeight" Value="3"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="Margin" Value="0,0,0,0"></Setter>
+            <Setter Property="Visibility" Value="Visible"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Hand"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Border CornerRadius="33" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Border.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FF687774" Offset="1"></GradientStop>
+                <GradientStop Color="#FFC6DFD9" Offset="0.8"></GradientStop>
+                <GradientStop Color="#FFDEE2E1" Offset="0.5"></GradientStop>
+                <GradientStop Color="#FFC0CBCD" Offset="0.3"></GradientStop>
+                <GradientStop Color="#FF819795" Offset="0"></GradientStop>
+            </LinearGradientBrush>
+        </Border.Background>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Border Grid.Row="1" Margin="0,77,0,0" CornerRadius="0,33,0,33" Background="#FFCDAE8A">
+                <DockPanel>
+                    <TextBlock Text="Користувач" FontSize="25" Foreground="#FF37667A" DockPanel.Dock="Top" Margin="7,77,7,0" TextAlignment="Center" FontWeight="SemiBold"></TextBlock>
+                    <TextBlock x:Name="userDispalyNameTbl" FontSize="25" HorizontalAlignment="Center" Foreground="White" DockPanel.Dock="Top" Margin="5,30,5,0"></TextBlock>
+                    <TextBlock x:Name="registartionTbl" Text="Створити новий обліковий запис" Style="{StaticResource normalText}" Foreground="#FF37667A" Opacity="0.7" DockPanel.Dock="Top" Margin="30,30,30,0" MouseLeftButtonUp="registartionTbl_MouseLeftButtonUp_1"></TextBlock>
+                    <TextBlock x:Name="edittingTbl" Text="Редагувати обліковий запис" Style="{StaticResource normalText}" Foreground="#FF37667A" Opacity="0.7" DockPanel.Dock="Top" Margin="30,30,30,0" MouseLeftButtonUp="edittingTbl_MouseLeftButtonUp_1"></TextBlock>
+                    <Button x:Name="exitBttn" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="7,0,7,33" Background="Transparent" Style="{StaticResource exitButton}" Click="exitBttn_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Icon:PackIconMaterial Kind="Logout" Margin="0,7,10,0" ></Icon:PackIconMaterial>
+                            <TextBlock Text="Вихід" FontSize="20"></TextBlock>
+                        </StackPanel>
+                    </Button>
+                </DockPanel>
+            </Border>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="53*"/>
+                    <RowDefinition Height="430*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Button  Name="closeBtn" Grid.Row="0" Click="closeBtn_Click" Style="{StaticResource closingButton}">
+                    <Icon:PackIconMaterial Kind="Close"/>
+                </Button>
+
+                <TextBlock Grid.Row="1" Text="Книги" FontSize="33" FontWeight="SemiBold" Margin="33,7,0,7" HorizontalAlignment="Left" Foreground="#FF37667A"></TextBlock>
+
+                <Border Grid.Row="1" HorizontalAlignment="Right" Background="#FFCDAE8A" Style="{StaticResource borderForButtons}">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="addBookBTTN" Content="+ Додати книгу" Background="Transparent" Style="{StaticResource mainButtons}" IsEnabled="True" Click="addBookBTTN_Click"></Button>
+                    </StackPanel>
+                </Border>
+
+                <Separator Height="3" Grid.Row="3"></Separator>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <Button Name="salesBTTN" Content="Акції" Click="salesBTTN_Click" Style="{StaticResource tabButtons}"></Button>
+                    <Button Name="newBooksBTTN" Content="Новинки" Click="newBooksBTTN_Click" Style="{StaticResource tabButtons}"></Button>
+                    <Button Name="allBooksBTTN" Content="Всі книги" Click="allBooksBTTN_Click" Style="{StaticResource tabButtons}"></Button>
+                    <Button Name="reservedBooksBTTN" Content="Резерв" Click="reservedBooksBTTN_Click" Style="{StaticResource tabButtons}"></Button>
+                    <Button Name="popBooksBTTN" Content="Популярні" Click="popBooksBTTN_Click" Style="{StaticResource tabButtons}"></Button>
+                </StackPanel>
+
+                <TextBlock Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="15" FontWeight="SemiBold" Margin="0,0,250,0" Text="Пошук по назві книги"/>
+
+                <Border Grid.Row="4" Margin="10" CornerRadius="7" Background="White" HorizontalAlignment="Right">
+                    <TextBox Name="searchingTbx" Style="{StaticResource filterTxtbx}" KeyUp="searchingTbx_KeyUp"/>
+                </Border>
+                
+                <Icon:PackIconMaterial Kind="Magnify" Grid.Row="4" Width="15" Height="15" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,15,0"></Icon:PackIconMaterial>
+
+                <DataGrid Grid.Row="5" Name="booksListDG" Background="#FFD9E6D6" Margin="10,0,10,0" BorderBrush="#FFB1D2D9" BorderThickness="5" AutoGenerateColumns="False" HeadersVisibility="All" 
+                    SelectionChanged="booksListDG_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Назва книги" Width="*" Binding="{Binding Path=BookName}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Автор" Width="*" Binding="{Binding Path=BookAuthor}"/>
+                        <DataGridTextColumn Header="Жанр" Width="*" Binding="{Binding Path=Genre}"/>
+                        <DataGridTextColumn Header="Видання" Width="*" Binding="{Binding Path=BookPublishment.PublishmentName}"/>
+                        <DataGridTextColumn Header="Рік випуску" Width="0.6*" Binding="{Binding Path=BookPublishment.PublishmentYear}"/>
+                        <DataGridTextColumn Header="Кількість" Width="0.5*" Binding="{Binding Path=PagesAmount}"/>
+                        <DataGridTextColumn Header="Собівартість" Width="0.7*" Binding="{Binding Path=Cost}"/>
+                        <DataGridTextColumn x:Name="priceDGTC" Header="Ціна" Width="0.4*" Binding="{Binding Path=Price}"/>
+                        <DataGridTemplateColumn Header="Операції" Width="0.5*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                                        <Button Name="editBookBTTN" Background="#FFCDAE8A" Margin="0,0,3,0" Click="editBookBTTN_Click">
+                                            <Icon:PackIconMaterial Kind="PencilOutline"/>
+                                        </Button>
+                                        <Button Name="deleteBookBTTN" Background="#FFF62A29" Margin="3,0,0,0" Click="deleteBookBTTN_Click">
+                                            <Icon:PackIconMaterial Kind="DeleteOutline"/>
+                                        </Button>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,33,0">
+                    <Border Background="#FF82B5B0" Style="{StaticResource borderForButtons}">
+                        <Button Name="discardBookBTTN" Content="Списати" Click="discardBookBTTN_Click" Background="#FF82B5B0" Style="{StaticResource mainButtons}"/>
+                    </Border>
+                    <Border Background="#FF95D6D0" Style="{StaticResource borderForButtons}">
+                    <Button Name="addToSalesBTTN" Content="Додати до акції"  Click="addToSalesBTTN_Click" Background="#FF95D6D0" Style="{StaticResource mainButtons}"/>
+                    </Border>
+                    <Border Background="#FFE6E4CF" Style="{StaticResource borderForButtons}">
+                    <Button Name="reserveBookBTTN" Content="Зарезервувати" Click="reserveBookBTTN_Click" Background="#FFE6E4CF" Style="{StaticResource mainButtons}"/>
+                    </Border>
+                    <Border Background="#FFEFE8E2" Style="{StaticResource borderForButtons}">
+                    <Button Name="sellBookBTTN" Content="Продати" Click="sellBookBTTN_Click" Background="#FFEFE8E2" Style="{StaticResource mainButtons}"/>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

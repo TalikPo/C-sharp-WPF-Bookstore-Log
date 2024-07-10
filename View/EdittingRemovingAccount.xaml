@@ -1,0 +1,35 @@
+﻿<Window x:Class="Книгарня.View.EdittingRemovingAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Книгарня.ViewModel"
+        mc:Ignorable="d"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        Title="Форма редагування облікового запису" MinHeight="300" MinWidth="350" Height="450" Width="350">
+    <Window.DataContext>
+        <local:UsersViewModel></local:UsersViewModel>
+    </Window.DataContext>
+    <Grid>
+        <DataGrid Grid.Row="5" Name="usersListDG" Background="#FFD9E6D6" BorderBrush="#FFB1D2D9" BorderThickness="5" AutoGenerateColumns="False" HeadersVisibility="All">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Ім'я користувача" Width="*" />
+                <DataGridTextColumn x:Name="passwordColumn" Header="Пароль" Width="*"/>
+                <DataGridTemplateColumn Header="Операції" Width="0.5*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                                <Button Name="editBookBTTN" Background="#FFCDAE8A" Margin="0,0,3,0" Click="editBookBTTN_Click">
+                                    <Icon:PackIconMaterial Kind="PencilOutline"/>
+                                </Button>
+                                <Button Name="deleteBookBTTN" Background="#FFF62A29" Margin="3,0,0,0" Click="deleteBookBTTN_Click">
+                                    <Icon:PackIconMaterial Kind="DeleteOutline"/>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

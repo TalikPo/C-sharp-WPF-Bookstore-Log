@@ -1,0 +1,114 @@
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\Книгарня.exe.config
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\Книгарня.exe
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\Книгарня.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\BLL.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\BLL.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\AppUI.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\AppUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\Книгарня_MarkupCompile.cache
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\Книгарня_MarkupCompile.lref
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\Книгарня.g.resources
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\Книгарня.Properties.Resources.resources
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\AppUI.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\AppUI.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\AppUI.csproj.CopyComplete
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\Книгарня.exe
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\Книгарня.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\DAL.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\DAL.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\BLL.dll.config
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\DAL.dll.config
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\LogOnWindow.baml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\LogOnWindow.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\MainWindow.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\MainWindow.baml
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\CommonServiceLocator.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\User\Desktop\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\DiscountWindow.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\DiscountWindow.baml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\AddingBookWindow.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\EditingBookWindow.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\AddingBookWindow.baml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\EditingBookWindow.baml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\RegistrationWindow.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\RegistrationWindow.baml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\EdittingRemovingAccount.g.cs
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\View\EdittingRemovingAccount.baml
+C:\Users\User\Desktop\Ado.net\Книгарня\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\IT Step\Ado.net\Книгарня\bin\Debug\Книгарня.exe.config
+D:\IT Step\Ado.net\Книгарня\bin\Debug\Книгарня.exe
+D:\IT Step\Ado.net\Книгарня\bin\Debug\Книгарня.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\BLL.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\CommonServiceLocator.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\EntityFramework.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\EntityFramework.SqlServer.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\System.Windows.Interactivity.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\DAL.dll
+D:\IT Step\Ado.net\Книгарня\bin\Debug\BLL.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\BLL.dll.config
+D:\IT Step\Ado.net\Книгарня\bin\Debug\EntityFramework.xml
+D:\IT Step\Ado.net\Книгарня\bin\Debug\EntityFramework.SqlServer.xml
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.xml
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\IT Step\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+D:\IT Step\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+D:\IT Step\Ado.net\Книгарня\bin\Debug\DAL.pdb
+D:\IT Step\Ado.net\Книгарня\bin\Debug\DAL.dll.config
+D:\IT Step\Ado.net\Книгарня\obj\Debug\AppUI.csproj.AssemblyReference.cache
+D:\IT Step\Ado.net\Книгарня\obj\Debug\AppUI.csproj.SuggestedBindingRedirects.cache
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\LogOnWindow.baml
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\AddingBookWindow.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\DiscountWindow.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\EditingBookWindow.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\EdittingRemovingAccount.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\RegistrationWindow.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\LogOnWindow.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\MainWindow.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\App.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\IT Step\Ado.net\Книгарня\obj\Debug\Книгарня_MarkupCompile.cache
+D:\IT Step\Ado.net\Книгарня\obj\Debug\Книгарня_MarkupCompile.lref
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\AddingBookWindow.baml
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\DiscountWindow.baml
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\EditingBookWindow.baml
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\EdittingRemovingAccount.baml
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\RegistrationWindow.baml
+D:\IT Step\Ado.net\Книгарня\obj\Debug\View\MainWindow.baml
+D:\IT Step\Ado.net\Книгарня\obj\Debug\Книгарня.g.resources
+D:\IT Step\Ado.net\Книгарня\obj\Debug\Книгарня.Properties.Resources.resources
+D:\IT Step\Ado.net\Книгарня\obj\Debug\AppUI.csproj.GenerateResource.cache
+D:\IT Step\Ado.net\Книгарня\obj\Debug\AppUI.csproj.CoreCompileInputs.cache
+D:\IT Step\Ado.net\Книгарня\obj\Debug\AppUI.csproj.CopyComplete
+D:\IT Step\Ado.net\Книгарня\obj\Debug\Книгарня.exe
+D:\IT Step\Ado.net\Книгарня\obj\Debug\Книгарня.pdb
